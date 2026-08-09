@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Site privé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- POP-UP D'IMAGE -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img id="popup-img" src="" alt="">
+            <p id="popup-text"></p>
+            <button id="close-popup">Fermer</button>
+        </div> 
+    </div>
+
+    <!-- Effet 22 3D -->
+    <div id="number-22" class="number-22">22</div>
+
+    <header>
+        <h1>Jeanounette Website</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="login-form">
+                <label for="username">Identifiant :</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Connexion</button>
+            </form>
+
+            <!-- Zone privée affichée après connexion -->
+            <div id="private-content" style="display: none;">
+                <h2>Couscous Boulette</h2>
+                <!-- Zone où les images animées apparaîtront -->
+                <div id="image-area"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2026 Elise&Thomas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
